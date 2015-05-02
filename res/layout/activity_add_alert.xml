@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/addAlertHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/addAlert_header"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/latitudeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alertNameLabelTextView"
+        android:layout_below="@+id/alertNameTxt"
+        android:layout_marginTop="14dp"
+        android:text="@string/latitude_label"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/latitudeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/longitudeTxt"
+            android:layout_alignLeft="@+id/alertNameTxt"
+            android:ems="10"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/alertNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/addAlertHeaderTextView"
+            android:ems="10"
+            android:inputType="text" >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/longitudeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/latitudeLabelTextView"
+            android:ems="10"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/radiusTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/longitudeTxt"
+            android:layout_below="@+id/longitudeTextView"
+            android:ems="10"
+            android:hint="In Kilometers"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/radiusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radiusTxt"
+            android:layout_alignLeft="@+id/longitudeTextView"
+            android:text="@string/radius_label"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/longitudeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/longitudeTxt"
+            android:layout_alignLeft="@+id/latitudeLabelTextView"
+            android:text="@string/longitude_label"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/alertNameLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/alertNameTxt"
+            android:layout_alignLeft="@+id/addAlertHeaderTextView"
+            android:text="@string/alertName_label"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/alertTypeHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/radiusTextView"
+                    android:layout_below="@+id/radiusTxt"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/alert_type_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Switch
+                    android:id="@+id/toastChk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/alertTypeHeaderText"
+                    android:layout_below="@+id/alertTypeHeaderText"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/toastAlert_label" 
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <Switch
+                    android:id="@+id/ringChk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/alertTypeHeaderText"
+                    android:layout_below="@+id/toastChk"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ringAlert_label" 
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <ImageButton
+                    android:id="@+id/addButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="21dp"
+                    android:layout_toLeftOf="@+id/cancelButton"
+                    android:src="@drawable/ic_action_accept" 
+                    android:contentDescription="@string/addButton"/>
+
+                <ImageButton
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/addButton"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_action_cancel" 
+                    android:contentDescription="@string/cancelButton" />
+
+</RelativeLayout>

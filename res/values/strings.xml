@@ -1,0 +1,25 @@
+<resources>
+	<!-- App Level -->
+    <string name="app_name">MobiMinder</string>
+    
+    <!-- Main Activity -->
+    <string name="add_alert">Add Alert</string>
+    
+    <!-- Alert List in Main Activty -->
+    <string name="del_alert">Delete this alert</string>
+    
+    <!-- Alert Detail -->
+    <string name="addAlert_header">Add a new location alert</string>
+    <string name="alertName_label">Alert Name</string>
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="radius_label">Radius</string>
+    <string name="alert_type_label">Select required alert</string>
+    <string name="toastAlert_label">Toast Notification</string>
+    <string name="ringAlert_label">Ring Tone</string>
+    <string name="addButton">Add</string>
+    <string name="cancelButton">Cancel</string>
+    
+    
+
+</resources>
